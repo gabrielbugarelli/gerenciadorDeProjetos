@@ -33,23 +33,24 @@ import api from './config/Axios.js'
 import Loader from './components/Loader'
 import logo from './assets/img/seplagmini.png';
 import Menu from './config/menu'
+import ProductOwner from './pages/ProductOwner/ProductOwner';
 
 const App = () => {
 
-    const user = useSelector((state) => state.userReducer.user)
+  const user = useSelector((state) => state.userReducer.user)
 
-    // Pode ser algum servidor executando localmente: 
-    // http://localhost:3000
+  // Pode ser algum servidor executando localmente: 
+  // http://localhost:3000
 
-    window.$http = api
+  window.$http = api
 
-    window.$toast = useRef(null);
+  window.$toast = useRef(null);
 
-    
-    
-    return (
-        <h1>gabriel</h1>
-    );
+
+
+  return (
+    <ProductOwner />
+  );
 
 }
 
