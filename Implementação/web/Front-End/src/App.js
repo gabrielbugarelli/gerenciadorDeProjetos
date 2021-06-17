@@ -3,7 +3,7 @@ import { CSSTransition } from 'react-transition-group';
 
 import { AppTopbar } from './AppTopbar';
 import { AppFooter } from './AppFooter';
-import { AppMenu } from './AppMenu';
+import { AppMenu } from './components/AppMenu/index';
 import { AppProfile } from './AppProfile';
 import { Toast } from 'primereact/toast';
 
@@ -45,8 +45,6 @@ const App = () => {
   window.$http = api
 
   window.$toast = useRef(null);
-
-
 
   return (
     <ProductOwner />
