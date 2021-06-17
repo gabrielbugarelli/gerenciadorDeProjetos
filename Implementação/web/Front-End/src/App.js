@@ -47,7 +47,10 @@ const App = () => {
   window.$toast = useRef(null);
 
   return (
-    <ProductOwner />
+     <>
+        <AppMenu />
+        <ProductOwner />
+     </> 
   );
 
 }

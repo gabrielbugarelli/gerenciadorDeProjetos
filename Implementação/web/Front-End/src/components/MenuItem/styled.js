@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MenuArea = styled.div`
-    width: 30px;
+    width: 50px;
     height: auto;
     margin-bottom: 20px;
     display: flex;

@@ -3,7 +3,7 @@ import { MenuIcon, MenuArea } from './styled'
 
 const MenuItem = ({ title, icon, link }) => {
     return (
-        <MenuArea>
+        <MenuArea data-tip={title} data-for='tip-right'>
             <MenuIcon className={icon} />
         </MenuArea>
     )
