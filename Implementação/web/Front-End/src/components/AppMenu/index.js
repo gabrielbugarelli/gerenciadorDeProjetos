@@ -5,12 +5,12 @@ import {BodyMenu} from './styled'
 export const AppMenu = (props) => {
     return (
         <BodyMenu>
-            {/* <MenuItem title='Usuario' icon='pi-user'/>
-            <MenuItem title='Pessoa'/>
-            <MenuItem title='Sprint'/>
-            <MenuItem title='Backlog'/> 
-            <MenuItem title='Projetos'/>
-            <MenuItem title='Adicionar'/> */}
+            <MenuItem title='Usuario' icon='' link=''/>
+            <MenuItem title='Pessoas' icon='' link=''/>
+            <MenuItem title='Sprint' icon='' link=''/>
+            <MenuItem title='Backlog' icon='' link=''/>
+            <MenuItem title='Projetos' icon='' link=''/>
+            <MenuItem title='Adicionar' icon='' link=''/>
         </BodyMenu>
     );
 }

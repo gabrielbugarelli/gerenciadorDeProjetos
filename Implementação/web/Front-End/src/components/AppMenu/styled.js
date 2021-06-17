@@ -5,3 +5,10 @@ export const BodyMenu = styled.div`
   width: 50px;
   background-color: #005494;
 `;
+
+// export const Icon = styled.img`
+//     background-color: white;
+//     width: 50px;
+//     height: 50px;
+// `
+
