@@ -1,0 +1,18 @@
+
+.quebrar-texto{
+    word-wrap: break-word !important;
+}
+.margin-superior-simples{
+    margin-top: 1vw;
+}
+@media screen and (max-width: 40em) {
+    .margin-superior-simples{
+        margin-top: 5vw;
+    }
+    .p-component{
+        width: 100% !important;
+    }
+    .margin-app-entre-button{
+        margin-top: 10px !important;
+    }
+}
