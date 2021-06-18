@@ -15,4 +15,4 @@ export const MenuArea = styled.div`
 export const MenuIcon = styled.i`
     font-size: 25px;
     color: white;
-`
+        `

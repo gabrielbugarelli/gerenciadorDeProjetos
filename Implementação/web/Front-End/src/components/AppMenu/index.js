@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import MenuItem from '../MenuItem';
-import {BodyMenu} from './styled'
+import {BodyMenu,TooltipMenu} from './styled'
 import ReactTooltip from 'react-tooltip';
 
 export const AppMenu = (props) => {
@@ -13,7 +13,7 @@ export const AppMenu = (props) => {
             <MenuItem title='Projetos' icon='pi pi-folder-open' link=''/>
             <MenuItem title='Adicionar' icon='pi pi-plus' link=''/>
             
-            <ReactTooltip id='tip-right' place='right' effect='solid'/>
+            <ReactTooltip id='tip-right' place='right' backgroundColor='#005494' textColor='white' effect='solid' />
         </BodyMenu>
     );
 }
