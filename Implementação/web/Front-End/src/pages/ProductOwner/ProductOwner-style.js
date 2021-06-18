@@ -6,3 +6,7 @@ export const Container = styled.div`
   background-color: red;
   padding:1.5vw;
 `;
+export const TitleProduct = styled.h3`
+  
+`;
+
