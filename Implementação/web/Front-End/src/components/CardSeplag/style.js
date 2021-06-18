@@ -6,7 +6,7 @@ export const Container = styled.div`
   gap:1vw;
   padding: 2vw;
   /* max-width: 100%; */
-  height: 100%;
+  height: 95%;
   margin-left: 32vw;
   background-color: #E5E5E5;
   border-radius:15px;
