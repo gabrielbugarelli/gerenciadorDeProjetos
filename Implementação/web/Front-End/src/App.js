@@ -53,7 +53,5 @@ const App = () => {
         <ProductOwner />
      </Container> 
   );
-
 }
-
 export default App;
