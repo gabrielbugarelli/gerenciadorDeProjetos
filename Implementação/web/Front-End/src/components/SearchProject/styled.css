@@ -1,0 +1,30 @@
+.teste{
+    width: 10vw;
+    outline: none;
+}
+.teste > button {
+    background-color: #d0d0d0;
+    color:#7A7A7A ;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}   
+.teste > button:hover {
+    background-color: #d0d0d0 !important;
+    color: #7A7A7A !important;
+    outline: none !important; 
+    border: none !important;
+}
+.teste > button:hover:first-child{
+    background-color: #d0d0d0;
+    color: #7A7A7A;
+    cursor: default;
+    outline: none;
+    border: none;
+    
+}
+
+.teste > button:focus:first-child{
+  outline-style: none !important;
+}
+
