@@ -28,6 +28,7 @@ import '@fullcalendar/daygrid/main.css';
 import '@fullcalendar/timegrid/main.css';
 import './assets/css/layout.scss';
 import './App.scss';
+import {Container} from './styled'
 
 import api from './config/Axios.js'
 import Loader from './components/Loader'
@@ -47,10 +48,10 @@ const App = () => {
   window.$toast = useRef(null);
 
   return (
-     <>
+     <Container>
         <AppMenu />
         <ProductOwner />
-     </> 
+     </Container> 
   );
 
 }
