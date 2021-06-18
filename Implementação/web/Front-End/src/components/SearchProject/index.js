@@ -43,7 +43,7 @@ const SearchProject = () => {
     }
     return (
         <>
-            <SplitButton label="Projetos" model={items} className='teste' />
+            <SplitButton label="Projetos" model={items} className='style-split' />
             
             
         </>
