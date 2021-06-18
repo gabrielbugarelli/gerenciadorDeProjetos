@@ -7,6 +7,16 @@ export const Container = styled.div`
   padding:1.5vw;
 `;
 export const TitleProduct = styled.h3`
-  
+  cursor: default;
+  color: #7A7A7A;
+  width: 15vw;
 `;
+
+export const TitleItemProjets = styled.h4`
+  cursor: default;
+  color: #7A7A7A;
+  width: 10vw;
+`;
+
+
 
