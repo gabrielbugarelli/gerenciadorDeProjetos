@@ -1,13 +1,20 @@
 import React from 'react';
-import { Container } from './style';
+import { Container, CardTask } from './style';
 import CardTarefa from '../CardTarefa';
 
 const CardSeplag = () => {
   return (
     <Container>
-      <CardTarefa />
-      <CardTarefa />
-      <CardTarefa />
+      <CardTask>
+        <CardTarefa />
+        <CardTarefa />
+        <CardTarefa />
+      </CardTask>
+      <CardTask>
+        <CardTarefa />
+        <CardTarefa />
+        <CardTarefa />
+      </CardTask>
     </Container>
 
   )

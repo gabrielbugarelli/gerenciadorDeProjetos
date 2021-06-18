@@ -8,7 +8,6 @@ const ProductOwner = () => {
             <CardSeplag />
         </Container>
     )
-
 }
 
 export default ProductOwner;
