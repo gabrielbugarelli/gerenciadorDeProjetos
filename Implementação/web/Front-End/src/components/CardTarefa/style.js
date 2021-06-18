@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
   display:flex;
   gap: 1vw;
-  width:25vw;
-  height: 50vh;
+  width:18vw;
+  height: 40vh;
   border-radius:11px;
   justify-content: center;
   background-color:#F0E38C;
