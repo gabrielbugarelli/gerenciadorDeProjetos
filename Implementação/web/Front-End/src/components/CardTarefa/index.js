@@ -7,12 +7,12 @@ const CardTarefa = () => {
     <Container>
       <div>Usuário</div>
       <Task>
-        <Card title="Projeto" subTitle="Nome da tarefa" />
-        <Card title="Projeto" subTitle="Nome da tarefa" />
+        <Card style={{ width: '8rem', height: '6.5rem' }} title="Projeto" subTitle="Nome da tarefa" />
+        <Card style={{ width: '8rem', height: '6.5rem' }} title="Projeto" subTitle="Nome da tarefa" />
       </Task>
       <Task>
-        <Card title="Projeto" subTitle="Nome da tarefa" />
-        <Card title="Projeto" subTitle="Nome da tarefa" />
+        <Card style={{ width: '8rem', height: '6.5rem' }} title="Projeto" subTitle="Nome da tarefa" />
+        <Card style={{ width: '8rem', height: '6.5rem' }} title="Projeto" subTitle="Nome da tarefa" />
       </Task>
     </Container>
   )

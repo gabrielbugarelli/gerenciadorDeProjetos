@@ -18,4 +18,5 @@ export const Container = styled.div`
 export const Task = styled.div`
   display:flex;
   gap: 1vw;
+  margin-top: -30px;
 `
