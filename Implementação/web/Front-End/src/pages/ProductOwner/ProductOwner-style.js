@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width:100%;
   height: 100vh;
-  /* background-color: red; */
   padding:1.5vw;
 `;
 export const TitleProduct = styled.h3`
@@ -12,11 +11,19 @@ export const TitleProduct = styled.h3`
   width: 15vw;
 `;
 
-export const TitleItemProjets = styled.h4`
+export const TitleItemProjects = styled.h4`
   cursor: default;
   color: #7A7A7A;
   width: 10vw;
 `;
 
-
+export const ContainerProjects = styled.div`
+  height: 80vh;
+  width: 25vw;
+  border-radius: 15px;
+  background-color: #EDEDED;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+`;
 
