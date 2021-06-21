@@ -2,7 +2,7 @@ import React from 'react';
 import { Container,TitleProduct,TitleItemProjets } from './ProductOwner-style';
 import CardSeplag from '../../components/CardSeplag';
 import SearchProject from '../../components/SearchProject'
-import ItemProjects from '../../components/ItemProjects'
+import ContainerProjects from '../../components/ContainerProjects'
 
 const ProductOwner = () => {
     return (
@@ -10,7 +10,9 @@ const ProductOwner = () => {
             <TitleProduct>Product Owner Board</TitleProduct>
             <SearchProject/>
             <TitleItemProjets>Pendentes</TitleItemProjets>
-            <ItemProjects></ItemProjects>
+            <ContainerProjects>
+
+            </ContainerProjects>
             <CardSeplag />
         </Container>
     )

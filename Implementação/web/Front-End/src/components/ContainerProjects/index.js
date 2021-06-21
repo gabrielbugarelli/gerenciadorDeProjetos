@@ -1,7 +1,7 @@
 import React from 'react'
 import {Container} from './styled'
 
-const ItemProjets = () => {
+const ContainerProjects = () => {
     return (
         <Container>
           
@@ -9,4 +9,4 @@ const ItemProjets = () => {
     )
 }
 
-export default ItemProjets;
+export default ContainerProjects;
