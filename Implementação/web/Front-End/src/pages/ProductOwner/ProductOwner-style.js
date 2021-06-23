@@ -27,3 +27,10 @@ export const ContainerProjects = styled.div`
   overflow-y: scroll;
 `;
 
+export const ContainerGeral = styled.div`
+  display: flex; 
+  justify-content:space-between;
+  /* background: black; */
+  height: 80%;
+`;
+
