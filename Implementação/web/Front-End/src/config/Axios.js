@@ -21,21 +21,26 @@ export const useAxiosLoader = () =>{
   const interceptors = useMemo( ()=> ({
     request:  config => {
       
-      const tokenStr = GetToken()
+      // const tokenStr = GetToken()
       
-      if (tokenStr!= null) { 
-        let token = JSON.parse(tokenStr)
-        let dataToken = token.token
+      // if (tokenStr!= null) { 
+      //   let token = JSON.parse(tokenStr)
+      //   let dataToken = token.token
         
-        if(config.data && typeof config.data === 'object' && config.data.get('grant_type') == 'refresh_token'){  
-          return (inc(),config);
-        } 
+      //   if(config.data && typeof config.data === 'object' && config.data.get('grant_type') == 'refresh_token'){  
+      //     return (inc(),config);
+      //   } 
 
-        config.headers.Authorization = `${dataToken.token_type}  ${dataToken.access_token}`
-        config.headers['Content-Type'] = 'application/json';
-  
-      }  
+      //   config.headers.Authorization = `${dataToken.token_type}  ${dataToken.access_token}`
+      //   config.headers['Content-Type'] = 'application/json';
+        
+      // }  
+
+      config.headers['Access-Control-Allow-Origin']= "*";
       config.headers['Content-Type'] = 'application/json';
+      config.headers['Access-Control-Allow-Methods'] =  "GET, POST, OPTIONS, PUT, PATCH, DELETE" ;
+      config.headers['Access-Control-Allow-Headers'] = "Authorization";
+
       return (inc(),config);
 
     },

@@ -18,13 +18,14 @@ export const TitleItemProjects = styled.h4`
 `;
 
 export const ContainerProjects = styled.div`
-  height: 70vh;
+  height: 100%;
   width: 25vw;
   border-radius: 15px;
   background-color: #EDEDED;
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
+  box-shadow: 0 1px 4px 0 rgba(192, 208, 230, 0.8);
 `;
 
 export const ContainerGeral = styled.div`
