@@ -10,7 +10,7 @@ const ItemProjects = ({data}) => {
     return (
         <>
             <ContainerItemProjects onClick={handleActive}>
-                <IconItemProjects className='pi pi-plus'/>
+                <IconItemProjects className={`${active  ? 'pi pi-minus' : 'pi pi-plus'}`}/>
                 <TitleItemProjects>{data.title}</TitleItemProjects>
             </ContainerItemProjects>
             {data.tarefas.map((item,key)=>(

@@ -21,7 +21,7 @@ export const TitleItemProjects = styled.h4`
 
 export const ContainerProjects = styled.div`
   height: 100%;
-  width: 25vw;
+  width: 100%;
   border-radius: 15px;
   background-color: #EDEDED;
   display: flex;
@@ -35,6 +35,7 @@ export const PendingArea = styled.div`
   flex-direction :column ;
   justify-content:space-between;
   height: 95%;
+  width: 25vw;
 `;
 
 export const TaskBoard = styled.div`

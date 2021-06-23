@@ -22,9 +22,8 @@ const ProductOwner = () => {
         <Container>
             <PendingArea>
                 <TitleProduct>Product Owner Board</TitleProduct>
+                <SearchProject projectsList={projectsList} setProjectsList={setProjectsList}/>
                 <TitleItemProjects>Pendentes</TitleItemProjects>
-                <SearchProject />
-
                 <ContainerProjects>
                     {projectsList.map((item, key) => (
                         <ItemProjects key={key}
@@ -33,7 +32,6 @@ const ProductOwner = () => {
                     ))}
                 </ContainerProjects>
             </PendingArea>
-
             <CardSeplag />
         </Container>
 
