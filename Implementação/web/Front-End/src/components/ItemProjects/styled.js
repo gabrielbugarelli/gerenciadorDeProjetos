@@ -5,12 +5,12 @@ export const ContainerItemProjects = styled.div`
     height: 8vh;
     min-height: 8vh;
     border-radius: 15px;
-    margin-bottom: 12px;
     margin-top: 5px;
     background-color: #78B5E2;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    cursor: pointer;
+    
     
 `;
 

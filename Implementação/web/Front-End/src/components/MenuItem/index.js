@@ -9,4 +9,4 @@ const MenuItem = ({ title, icon, link }) => {
     )
 }
 
-export default MenuItem;
+export default MenuItem;                

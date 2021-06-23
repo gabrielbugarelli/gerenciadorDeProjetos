@@ -18,7 +18,7 @@ export const TitleItemProjects = styled.h4`
 `;
 
 export const ContainerProjects = styled.div`
-  height: 80vh;
+  height: 70vh;
   width: 25vw;
   border-radius: 15px;
   background-color: #EDEDED;
