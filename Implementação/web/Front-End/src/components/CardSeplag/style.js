@@ -12,7 +12,7 @@ export const Container = styled.div`
   gap:1vw;
   padding: 0.5vw;
   height: 100%;
-  width: 60vw;
+  width: 67vw;
   background-color: #E5E5E5;
   border-radius:15px;
   justify-content:center;
