@@ -15,7 +15,7 @@ export const Container = styled.div`
   width: 67vw;
   background-color: #E5E5E5;
   border-radius:15px;
-  justify-content:center;
+  justify-content:space-between;
   align-items: center;
   box-shadow: 0 1px 4px 0 rgba(192, 208, 230, 0.8);
 `

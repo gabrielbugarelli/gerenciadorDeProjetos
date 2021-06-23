@@ -1,7 +1,7 @@
 import React from 'react';
 
 //styles
-import { Container, Header } from './styled';
+import { Container, Header, Cards } from './styled';
 
 //components
 import Card from '../Card';
@@ -10,7 +10,15 @@ const Board = ({ user }) => {
   return (
     <Container>
       <Header> {user} </Header>
-      <Card />
+
+      <Cards>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </Cards>
     </Container>
   );
 }
