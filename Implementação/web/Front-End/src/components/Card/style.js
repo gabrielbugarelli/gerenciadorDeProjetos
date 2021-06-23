@@ -18,6 +18,7 @@ export const Header = styled.header`
 `
 
 export const ProjectTitle = styled.h5`
-margin-top: -1px;
-  margin-bottom: -1px; 
+  margin-top: -1px;
+  margin-bottom: -1px;
+  font-weight:bold ;
 `

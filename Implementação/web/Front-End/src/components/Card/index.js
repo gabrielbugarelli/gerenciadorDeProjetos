@@ -8,7 +8,7 @@ export default function Card() {
     <Container>
       <Header />
       <ProjectTitle>Projeto</ProjectTitle>
-      <p>descrição</p>
+      <p>Tarefa</p>
     </Container>
   )
 }
