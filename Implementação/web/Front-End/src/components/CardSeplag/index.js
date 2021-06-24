@@ -1,14 +1,14 @@
 import React from 'react';
 
 //styled components
-import { Header, Container, CardTask } from './style';
+import { Container, Tasks, Header } from './style';
 
 //components
 import Board from '../Board';
 
 //import SearchProject from '../SearchProject';
 
-const Boards = [
+const boards = [
   {
     id: 1,
     user: 'Gabriel',
@@ -33,12 +33,30 @@ const Boards = [
     id: 6,
     user: 'Ilessa',
   },
+  {
+    id: 7,
+    user: 'Eduardo',
+  },
+  {
+    id: 8,
+    user: 'Kaue',
+  },
+  {
+    id: 9,
+    user: 'Claudia',
+  },
 ]
 
 const CardSeplag = () => {
   return (
     <Container>
-      {Boards.map(board => <Board key={board.id} user={board.user} />)}
+      <Header>
+        <label>Setor</label>
+        <label>Sprint</label>
+      </Header>
+      <Tasks>
+        {boards.map(board => <Board key={board.id} user={board.user} />)}
+      </Tasks>
     </Container>
 
   )

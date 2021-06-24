@@ -3,12 +3,14 @@ import React from 'react';
 //styleds
 import { Container, Header, ProjectTitle } from './style';
 
-export default function Card() {
+export default function Card(props) {
   return (
     <Container>
-      <Header />
-      <ProjectTitle>Projeto</ProjectTitle>
-      <p>Tarefa</p>
+      <Header priority={props.priority} />
+      <ProjectTitle>
+        {props.title}
+      </ProjectTitle>
+      <p>{props.description}</p>
     </Container>
   )
 }
