@@ -36,10 +36,3 @@ export const TitleItemProjects = styled.div`
     padding-left: 12%;
     
 `;
-export const LastMsg = styled.p`
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    padding-right: 15%;
-    
-`;

@@ -10,6 +10,6 @@ export const LastMsg = styled.p`
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    padding-right: 15%;
+    padding-right: 5%;
     
 `;

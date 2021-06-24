@@ -7,7 +7,7 @@ export const Container = styled.div`
     background-color: #999898;
     border-radius: 15px;
     cursor: grab;
-    margin-left: 3%;
+    margin-left:3%;
     
     :hover{
         opacity: 0.7;
@@ -20,7 +20,7 @@ export const TitleTarefa = styled.div`
     font-size: 20px;
     display: flex;
     align-items: center;
-    margin-left: 3vw;
+    margin-left: 1.5vw;
 `;
 
 

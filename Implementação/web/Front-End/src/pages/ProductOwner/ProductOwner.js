@@ -6,7 +6,7 @@ import ItemProjects from '../../components/ItemProjects'
 
 const ProductOwner = () => {
     const [projectsList, setProjectsList] = useState([
-        { "projectId": 1, "title": "Primeiro Projeto", "tarefas":
+        { "projectId": 1, "title": "Deblaração de bens", "tarefas":
          [  {'tarefaId':'1','title':'Criar tela de login fsadf sdafsad ffdsadf asfsadf'},
             {'tarefaId':'2','title':'Criar barra de Rolagem'} 
         ]},
