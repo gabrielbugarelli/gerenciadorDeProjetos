@@ -8,7 +8,10 @@ export const Container = styled.div`
     border-radius: 15px;
     cursor: grab;
     margin-left:3%;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     :hover{
         opacity: 0.7;
     }
