@@ -26,8 +26,16 @@ export const ContainerProjects = styled.div`
   background-color: #EDEDED;
   display: flex;
   flex-direction: column;
-  overflow-y: scroll;
   box-shadow: 0 1px 4px 0 rgba(192, 208, 230, 0.8);
+  overflow-y: auto;
+  ::-webkit-scrollbar{
+        width: 6px;
+        height: 6px;
+  }
+  ::-webkit-scrollbar-thumb{
+        background-color: rgba(0, 0, 0, 0.2);;
+  }
+
 `;
 
 export const PendingArea = styled.div`

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ContainerItemProjects = styled.div`
-    width: 100%;
+    width: 98%;
     height: 8vh;
     min-height: 8vh;
     border-radius: 15px;
