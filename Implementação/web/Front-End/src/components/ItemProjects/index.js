@@ -26,3 +26,4 @@ const ItemProjects = ({data}) => {
 }
 
 export default ItemProjects;
+

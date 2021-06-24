@@ -7,7 +7,7 @@ export const Container = styled.div`
     background-color: #999898;
     border-radius: 15px;
     cursor: grab;
-    margin-left:3%;
+    margin-left:15px;
     display: flex;
     flex-direction: column;
     justify-content: center;

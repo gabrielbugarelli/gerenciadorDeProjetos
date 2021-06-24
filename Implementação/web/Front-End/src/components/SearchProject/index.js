@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, ContainerSearchProject, IconSearchProject, ContainerListProject } from './styled';
 import TarefasSearch from '../TarefasSearch'
 
-const SearchProject = ({ list, setList, title }) => {
+const SearchProject = ({ title,list, setList, listButton  ,setListButton}) => {
 
     const [active, setActive] = useState(false);
 
@@ -18,10 +18,14 @@ const SearchProject = ({ list, setList, title }) => {
             </ContainerSearchProject>
             {active &&
                 <ContainerListProject>
-                    {list.map((item, key) => (
+                    {listButton.map((item, key) => (
                         <TarefasSearch
                             key={key}
                             data={item}
+                            setList={setList}
+                            setListButton={setListButton}
+                            setActive={setActive}
+                            active={active}
                         />
                     ))}
                 </ContainerListProject>
