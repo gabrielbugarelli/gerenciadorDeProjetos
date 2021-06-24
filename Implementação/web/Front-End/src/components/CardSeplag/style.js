@@ -9,7 +9,8 @@ export const Container = styled.div`
   padding: 0.5vw;
   height: 100%;
   width: 67vw;
-  background-color: #E5E5E5;
+  /* background-color: #E5E5E5; */
+  background-color: white;
   border-radius:15px;
   box-shadow: 0 1px 4px 0 rgb(102, 102, 102, 0.3);
 

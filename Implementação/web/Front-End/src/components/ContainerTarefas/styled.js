@@ -1,11 +1,17 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width: 100%;
-    height: 50vh;
+    width: 80%;
+    height: 3vh;
     margin-top: 3px;
     background-color: #999898;
     border-radius: 15px;
+    cursor: grab;
+    margin-left: 3%;
+    
+    :hover{
+        opacity: 0.7;
+    }
     
 
 `;

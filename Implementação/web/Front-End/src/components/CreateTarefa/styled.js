@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-     width: 100%;
-    height: 50vh;
+     width: 80%;
+    height: 3vh;
     margin-top: 3px;
     background-color: #EDEDED;
     border-radius: 15px;
+    margin-left: 15px;
     display: flex;
     align-items: center;
+    cursor: pointer;
 
 `;
 

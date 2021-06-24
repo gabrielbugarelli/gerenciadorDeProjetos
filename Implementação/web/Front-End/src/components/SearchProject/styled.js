@@ -5,7 +5,7 @@ export const Container = styled.div`
 `;
 export const ContainerSearchProject = styled.button`
     width: 100%;
-    height:7vh ;
+    height:3.5vh ;
     display: flex;
     border-radius: 15px;
     background-color:#999898 ;
@@ -15,7 +15,8 @@ export const ContainerSearchProject = styled.button`
     align-items: center;
     justify-content: center;
     padding-right: 30px;
-    font-size: 25px;
+    font-size: 20px;
+    cursor: pointer;
 `;
 
 export const IconSearchProject = styled.i`

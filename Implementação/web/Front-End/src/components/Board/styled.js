@@ -10,8 +10,8 @@ export const Container = styled.div`
   border-radius: 15px;
   font-size: 1.1vw;
   /* background-color: #F0E38C; */
-  background-color: #005494;
-  color: white;
+  background-color: #D4D4D4;
+  color: #5F5E5E;
   box-shadow: 0 1px 4px 0 rgba(192, 208, 230, 0.8);
 `
 export const Header = styled.header`

@@ -11,4 +11,9 @@ export const Container = styled.div`
     color: #7A7A7A;
     font-size: 20px;
     cursor: pointer;
+    z-index: 99;
+    :hover{
+        background-color:#D6D6D6 ;
+        color: white;
+    }
 `;

@@ -23,17 +23,20 @@ export const ContainerProjects = styled.div`
   height: 100%;
   width: 100%;
   border-radius: 15px;
-  background-color: #EDEDED;
+  background-color: white;
   display: flex;
   flex-direction: column;
   box-shadow: 0 1px 4px 0 rgba(192, 208, 230, 0.8);
-  overflow-y: auto;
-  ::-webkit-scrollbar{
+  overflow-y: hidden;
+  :hover{
+    overflow-y: auto;
+    ::-webkit-scrollbar{
         width: 6px;
         height: 6px;
-  }
-  ::-webkit-scrollbar-thumb{
-        background-color: rgba(0, 0, 0, 0.2);;
+    }
+    ::-webkit-scrollbar-thumb{
+          background-color: rgba(0, 0, 0, 0.2);;
+    }
   }
 
 `;
