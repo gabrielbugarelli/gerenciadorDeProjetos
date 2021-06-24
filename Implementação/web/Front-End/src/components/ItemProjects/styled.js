@@ -6,6 +6,7 @@ export const ContainerItemProjects = styled.div`
     min-height: 5.5vh;
     border-radius: 15px;
     margin-top: 5px;
+    margin-left: 1%;
     background-color: #78B5E2;
     display: flex;
     align-items: center;
@@ -33,6 +34,6 @@ export const TitleItemProjects = styled.div`
     color: white;
     display: flex;
     align-items: center;
-    padding-left: 12%;
+    padding-left: 5%;
     
 `;
