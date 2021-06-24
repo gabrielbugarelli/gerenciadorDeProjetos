@@ -2,15 +2,21 @@ import React from 'react';
 
 //styleds
 import { Container, Header, ProjectTitle } from './style';
+import { LastMsg } from '../../styled';
 
 export default function Card(props) {
   return (
     <Container>
       <Header priority={props.priority} />
       <ProjectTitle>
-        {props.title}
+        <LastMsg>
+          {props.title}
+        </LastMsg>
       </ProjectTitle>
-      <p>{props.description}</p>
+
+      <LastMsg>
+        {props.description}
+      </LastMsg>
     </Container>
   )
 }

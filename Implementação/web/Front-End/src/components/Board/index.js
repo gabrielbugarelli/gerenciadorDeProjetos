@@ -9,7 +9,7 @@ import Card from '../Card';
 const tasks = [
   {
     title: 'Projeto X',
-    description: 'tela de login',
+    description: 'tela de loginNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN',
     priority: '#FFE500'
   },
   {

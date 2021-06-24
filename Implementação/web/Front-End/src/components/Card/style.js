@@ -17,7 +17,7 @@ export const Container = styled.div`
 `
 export const Header = styled.header`
   width: 60%;
-  height: 1.5vh;
+  height: 1vh;
   border-radius: 20px;
   margin-bottom:5px;
   background-color: ${props => props.priority};
