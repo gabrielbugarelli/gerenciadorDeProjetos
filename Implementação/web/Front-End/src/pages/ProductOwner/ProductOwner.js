@@ -88,7 +88,7 @@ const ProductOwner = () => {
         <Container>
             <PendingArea>
                 <TitleProduct>Product Owner Board</TitleProduct>
-                <SearchProject projectsList={projectsList} setProjectsList={setProjectsList} />
+                <SearchProject title={'Projetos'} list={projectsList} setList={setProjectsList} />
                 <TitleItemProjects>Pendentes</TitleItemProjects>
                 <ContainerProjects>
                     {projectsList.map((item, key) => (

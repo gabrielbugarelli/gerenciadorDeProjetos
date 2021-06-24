@@ -6,7 +6,7 @@ import { Container, Tasks, Header } from './style';
 //components
 import Board from '../Board';
 
-//import SearchProject from '../SearchProject';
+import SearchProject from '../SearchProject';
 
 const boards = [
   {
@@ -51,8 +51,8 @@ const CardSeplag = () => {
   return (
     <Container>
       <Header>
-        <label> <strong>Setor</strong></label>
-        <label><strong>Sprint</strong></label>
+        <SearchProject title={'Setor'} />
+        <SearchProject title={'Sprint'} />
       </Header>
       <Tasks>
         {boards.map(board => <Board key={board.id} user={board.user} />)}
