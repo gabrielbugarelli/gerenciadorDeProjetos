@@ -9,9 +9,9 @@ export const Container = styled.div`
   height: calc(100% - 55%);
   border-radius: 15px;
   font-size: 1.1vw;
-  /* background-color: #F0E38C; */
-  background-color: #D4D4D4;
-  color: #5F5E5E;
+  /* background-color: #D9C830; */
+  background-color: #999898;
+  color: white;
   box-shadow: 0 1px 4px 0 rgba(192, 208, 230, 0.8);
 `
 export const Header = styled.header`
