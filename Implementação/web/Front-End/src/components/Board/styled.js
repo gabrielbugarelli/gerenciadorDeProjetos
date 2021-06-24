@@ -8,7 +8,10 @@ export const Container = styled.div`
   width: 20.5vw;
   height: calc(100% - 55%);
   border-radius: 15px;
-  background-color: #F0E38C;
+  font-size: 1.1vw;
+  /* background-color: #F0E38C; */
+  background-color: #005494;
+  color: white;
   box-shadow: 0 1px 4px 0 rgba(192, 208, 230, 0.8);
 `
 export const Header = styled.header`

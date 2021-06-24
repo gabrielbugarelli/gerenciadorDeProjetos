@@ -6,10 +6,19 @@ export const Container = styled.div`
   padding: 6px;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 1px 4px 0 rgba(192, 208, 230, 0.8);
+  /* box-shadow: 0 1px 4px 0 rgba(192, 208, 230, 0.8); */
   color: #5F5E5E;
-`
+  cursor: grab;
 
+  &:hover{
+    height: 10.2vh;
+    width: 9.2vw;
+  }
+
+  &:active{
+    cursor:grabbing;
+  }
+`
 export const Header = styled.header`
   width: 60%;
   height: 1.5vh;

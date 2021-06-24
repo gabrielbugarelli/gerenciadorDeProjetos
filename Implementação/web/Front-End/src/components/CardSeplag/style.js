@@ -21,6 +21,13 @@ export const Tasks = styled.div`
   max-width: 100%;
   height: 95%;
   overflow-y: scroll;
+  ::-webkit-scrollbar{
+        width: 10px;
+        height: 6px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: rgba(0, 0, 0, 0.2);;
+    }
 `
 
 export const Header = styled.header`

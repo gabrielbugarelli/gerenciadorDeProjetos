@@ -51,14 +51,13 @@ const CardSeplag = () => {
   return (
     <Container>
       <Header>
-        <label>Setor</label>
-        <label>Sprint</label>
+        <label> <strong>Setor</strong></label>
+        <label><strong>Sprint</strong></label>
       </Header>
       <Tasks>
         {boards.map(board => <Board key={board.id} user={board.user} />)}
       </Tasks>
     </Container>
-
   )
 }
 

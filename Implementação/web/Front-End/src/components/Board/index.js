@@ -16,12 +16,12 @@ const tasks = [
   {
     title: 'Sigadoc',
     description: 'O SITE CAIU',
-    priority: '#F04055'
+    priority: '#F39436'
   },
   {
     title: 'Projeto Y',
     description: 'segurança',
-    priority: '#F04055'
+    priority: '#F39436'
   },
   {
     title: 'Sigadoc',
