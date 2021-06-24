@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 //styles
 import { Container, Header, Cards } from './styled';
 
 //components
 import Card from '../Card';
-
 
 const tasks = [
   {
@@ -41,12 +40,14 @@ const tasks = [
 ]
 
 const Board = ({ user }) => {
+  const [task, setTask] = useState(tasks);
+
   return (
     <Container>
       <Header> {user} </Header>
 
       <Cards>
-        {tasks.map(task => <Card key={task.title} title={task.title} description={task.description} priority={task.priority} />)}
+        {task.map(task => <Card key={task.title} title={task.title} description={task.description} priority={task.priority} />)}
       </Cards>
     </Container>
   );
