@@ -57,3 +57,14 @@ export const TaskBoard = styled.div`
   height: 80%;
 `;
 
+export const TitleTarefa = styled.div`
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 3vw;
+`;
+
+
+
+

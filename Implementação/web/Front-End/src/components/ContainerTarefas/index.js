@@ -1,6 +1,7 @@
 import React from 'react';
 import {Container,TitleTarefa} from'./styled'
 import CreateTarefa from '../CreateTarefa';
+import {LastMsg} from '../../styled'
 
 const ContainerTarefas = ({data,Active}) => {
     return (
@@ -8,7 +9,7 @@ const ContainerTarefas = ({data,Active}) => {
             {Active  &&
                 <>
                     <Container>
-                        <TitleTarefa>{data}</TitleTarefa>
+                        <TitleTarefa><LastMsg>{data.title}</LastMsg></TitleTarefa>
                     </Container>
                 </>
             }

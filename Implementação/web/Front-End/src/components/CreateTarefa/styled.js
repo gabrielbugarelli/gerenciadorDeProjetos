@@ -14,7 +14,7 @@ export const Container = styled.div`
 `;
 
 export const IconCreateTarefa = styled.i`
-    font-size: 20px;
+    font-size: 15px;
     color: #7A7A7A;
     margin-left: 25px;
 `;

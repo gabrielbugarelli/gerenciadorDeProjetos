@@ -27,12 +27,19 @@ export const IconItemProjects = styled.div`
 
 export const TitleItemProjects = styled.div`
     width: 100%;
+    max-width: 90%;
     height: 100%;
     font-size: 25px;
     color: white;
-    
     display: flex;
     align-items: center;
-    padding-left: 25%;
+    padding-left: 12%;
+    
+`;
+export const LastMsg = styled.p`
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-right: 15%;
     
 `;

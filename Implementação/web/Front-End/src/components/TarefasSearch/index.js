@@ -1,10 +1,11 @@
 import React from 'react';
 import { Container } from './styled';
+import {LastMsg} from '../../styled'
 
 const TarefasSearch = ({data}) => {
     return (
         <Container>
-            {data.title}
+            <LastMsg>{data.title}</LastMsg>
         </Container>
     );
 }

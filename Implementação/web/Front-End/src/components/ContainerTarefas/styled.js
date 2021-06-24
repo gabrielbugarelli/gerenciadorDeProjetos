@@ -15,7 +15,6 @@ export const Container = styled.div`
     
 
 `;
-
 export const TitleTarefa = styled.div`
     color: white;
     font-size: 20px;
@@ -23,3 +22,5 @@ export const TitleTarefa = styled.div`
     align-items: center;
     margin-left: 3vw;
 `;
+
+
