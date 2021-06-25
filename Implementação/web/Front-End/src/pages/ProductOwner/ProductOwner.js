@@ -7,7 +7,7 @@ import ItemProjects from '../../components/ItemProjects'
 const ProductOwner = () => {
     const [projectsList, setProjectsList] = useState([]);
     const [projectsListButton, setProjectsListButton] = useState([]);
-    
+
     useEffect(() => {
         window.$http.get('/projeto').then((res) => {
             setProjectsList(res.data)
@@ -19,7 +19,13 @@ const ProductOwner = () => {
         <Container>
             <PendingArea>
                 <TitleProduct>Product Owner Board</TitleProduct>
-                <SearchProject title={'Projetos'} list={projectsList} setList={setProjectsList} listButton={projectsListButton}setListButton={setProjectsListButton} />
+                <SearchProject
+                    title={'Projetos'}
+                    list={projectsList}
+                    setList={setProjectsList}
+                    listButton={projectsListButton}
+                    setListButton={setProjectsListButton} 
+                />
                 <TitleItemProjects>Pendentes</TitleItemProjects>
                 <ContainerProjects>
                     {projectsList.map((item, key) => (

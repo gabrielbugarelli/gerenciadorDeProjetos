@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 import { Container, ContainerSearchProject, IconSearchProject, ContainerListProject } from './styled';
 import TarefasSearch from '../TarefasSearch'
+import AllTarefas from '../AllTarefas'
 
 const SearchProject = ({ title,list, setList, listButton  ,setListButton}) => {
 
     const [active, setActive] = useState(false);
 
     function hadleActive() {
+        setActive(!active)
+    }
+
+    function handleAllTarefas() {
+        setList(listButton)
         setActive(!active)
     }
 
@@ -28,6 +34,7 @@ const SearchProject = ({ title,list, setList, listButton  ,setListButton}) => {
                             active={active}
                         />
                     ))}
+                    <AllTarefas title='Todos os projetos' onClick={handleAllTarefas} />
                 </ContainerListProject>
             }
         </Container>

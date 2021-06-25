@@ -6,13 +6,10 @@ const TarefasSearch = ({data,setList,setListButton,setActive,active}) => {
 
 
     function handleSearch() {
-        console.log(data)
         window.$http.get(`/projeto?projectId=${data.projectId}`).then((res) => {
-            console.log(res)
                 setList(res.data)
         })
         setActive(!active)
-
     }
 
     return (
