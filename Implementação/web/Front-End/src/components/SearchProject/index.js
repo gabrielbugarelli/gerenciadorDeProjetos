@@ -3,7 +3,7 @@ import { Container, ContainerSearchProject, IconSearchProject, ContainerListProj
 import TarefasSearch from '../TarefasSearch'
 import AllTarefas from '../AllTarefas'
 
-const SearchProject = ({ title,list, setList, listButton  ,setListButton}) => {
+const SearchProject = ({ title,list, setList, listButton  ,setListButton, typeSearch}) => {
 
     const [active, setActive] = useState(false);
 
@@ -32,9 +32,12 @@ const SearchProject = ({ title,list, setList, listButton  ,setListButton}) => {
                             setListButton={setListButton}
                             setActive={setActive}
                             active={active}
+                            typeSearch={typeSearch}
                         />
                     ))}
-                    <AllTarefas title='Todos os projetos' onClick={handleAllTarefas} />
+                    { typeSearch == 'projeto' &&
+                        <AllTarefas title= {`Todos os ${title}`} onClick={handleAllTarefas} />
+                    }
                 </ContainerListProject>
             }
         </Container>

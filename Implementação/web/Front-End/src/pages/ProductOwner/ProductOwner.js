@@ -9,7 +9,7 @@ const ProductOwner = () => {
     const [projectsListButton, setProjectsListButton] = useState([]);
 
     useEffect(() => {
-        window.$http.get('/projeto').then((res) => {
+        window.$http.get('http://localhost:3000/projeto').then((res) => {
             setProjectsList(res.data)
             setProjectsListButton(res.data)
         })
@@ -25,6 +25,7 @@ const ProductOwner = () => {
                     setList={setProjectsList}
                     listButton={projectsListButton}
                     setListButton={setProjectsListButton} 
+                    typeSearch={'projeto'}
                 />
                 <TitleItemProjects>Pendentes</TitleItemProjects>
                 <ContainerProjects>

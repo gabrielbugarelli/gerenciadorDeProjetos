@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 
 //styled components
 import { Container, Tasks, Header } from './style';
@@ -11,105 +11,29 @@ import SearchProject from '../SearchProject';
 
 const CardSeplag = () => {
 
-  const [board, setBoard] = useState([
-    {
-      id: 1,
-      user: 'Gabriel',
-    },
-    {
-      id: 2,
-      user: 'Nelcael',
-    },
-    {
-      id: 3,
-      user: 'Toka',
-    },
-    {
-      id: 4,
-      user: 'Pedro',
-    },
-    {
-      id: 5,
-      user: 'Elvister',
-    },
-    {
-      id: 6,
-      user: 'Ilessa',
-    },
-    {
-      id: 7,
-      user: 'Eduardo',
-    },
-    {
-      id: 8,
-      user: 'Kaue',
-    },
-    {
-      id: 9,
-      user: 'Claudia',
-    },
-  ])
+  const [board, setBoard] = useState([])
 
-  const [task, setTask] = useState([
-    {
-      id: 1,
-      title: 'Projeto X',
-      description: 'tela de loginNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN',
-      priority: '#FFE500'
-    },
-    {
-      id: 2,
-      title: 'Sigadoc',
-      description: 'O SITE CAIU',
-      priority: '#F39436'
-    },
-    {
-      id: 3,
-      title: 'Projeto Y',
-      description: 'segurança',
-      priority: '#F39436'
-    },
-    {
-      id: 4,
-      title: 'Sigadoc',
-      description: 'tela de login',
-      priority: '#66C4CD'
-    },
-    {
-      id: 5,
-      title: 'Projeto X',
-      description: 'tela de login',
-      priority: '#FFE500'
-    },
-    {
-      id: 6,
-      title: 'Projeto X',
-      description: 'tela de login',
-      priority: '#66C4CD'
-    },
-  ])
+  const [task, setTask] = useState([])
 
-  const [setor, setSetor] = useState([
-    { "title": 'setor 1' },
-    { "title": 'setor 1' },
-    { "title": 'setor 1' },
-    { "title": 'setor 1' },
-    { "title": 'setor 1' },
-  ])
 
-  const [sprint, setSprint] = useState([
-    { "title": 'sprint 1' },
-    { "title": 'sprint 1' },
-    { "title": 'sprint 1' },
-    { "title": 'sprint 1' },
-    { "title": 'sprint 1' },
-  ])
+  const [setorButton, setSetorButton] = useState([]);
+  const [setor, setSetor] = useState([]);
+
+
+  useEffect(() => {
+    window.$http.get('http://localhost:3000/setor').then((res) => {
+        setSetor(res.data)
+        console.log(res.data);
+        setSetorButton(res.data)
+    })
+}, []);
 
   return (
     <Container>
       <Header>
-        <SearchProject title={'Setor'} list={setor} setList={setSetor} />
-        <SearchProject title={'Sprint'} list={sprint} setList={setSprint} />
+      {/* title,list, setList, listButton  ,setListButton, typeSearch */}
+        <SearchProject title={'Setor'} list={setor} setList={setSetor} listButton={setorButton} setListButton={setSetorButton} typeSearch={'setor'}/>
+        {/* <SearchProject title={'Sprint'} list={sprint} setList={setSprint} /> */}
       </Header>
       <Tasks>
         {board.map(board => <Board key={board.id} user={board.user}>

@@ -2,11 +2,10 @@ import React,{useEffect,useState} from 'react';
 import { Container } from './styled';
 import {LastMsg} from '../../styled'
 
-const TarefasSearch = ({data,setList,setListButton,setActive,active}) => {
-
-
+const TarefasSearch = ({data,setList,setListButton,setActive,active,typeSearch}) => {
+    // const filtro = data.title
     function handleSearch() {
-        window.$http.get(`/projeto?projectId=${data.projectId}`).then((res) => {
+        window.$http.get(`http://localhost:3000/${typeSearch}?Id=${data.Id}`).then((res) => {
                 setList(res.data)
         })
         setActive(!active)
