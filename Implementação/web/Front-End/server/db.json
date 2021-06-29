@@ -1,90 +1,90 @@
 {
     "projeto":[
         {
-            "Id": 1, "title": "Declaração de bens", "tarefas":
-                [{ "tarefaId": "1", "title": "Criar tela de login fsadf sdafsad ffdsadf asfsadf" },
-                { "tarefaId": "2", "title": "Criar barra de Rolagem" }
+            "id": 1, "title": "Declaração de bens", "tarefas":
+                [{ "id": "1", "title": "Criar tela de login fsadf sdafsad ffdsadf asfsadf" },
+                { "id": "2", "title": "Criar barra de Rolagem" }
                 ]
         },
         {
-            "Id": 2, "title": "Segundo Projeto", "tarefas":
-                [{ "tarefaId": "1", "title": "Criar tela de login 2" },
-                { "tarefaId": "2", "title": "Criar barra de Rolagem 2" },
-                { "tarefaId": "3", "title": "teste" }
+            "id": 2, "title": "Segundo Projeto", "tarefas":
+                [{ "id": "1", "title": "Criar tela de login 2" },
+                { "id": "2", "title": "Criar barra de Rolagem 2" },
+                { "id": "3", "title": "teste" }
                 ]
         },
         {
-            "Id": 3, "title": "Terceiro Projeto", "tarefas":
-                [{ "tarefaId": "1", "title": "Fazer footer" },
-                { "tarefaId": "2", "title": "Fazer menu" }
+            "id": 3, "title": "Terceiro Projeto", "tarefas":
+                [{ "id": "1", "title": "Fazer footer" },
+                { "id": "2", "title": "Fazer menu" }
                 ]
         },
         {
-            "Id": 4, "title": "Quarto Projeto", "tarefas":
-                [{ "tarefaId": "1", "title": "Fazer footer" },
-                { "tarefaId": "2", "title": "Fazer menu" }
+            "id": 4, "title": "Quarto Projeto", "tarefas":
+                [{ "id": "1", "title": "Fazer footer" },
+                { "id": "2", "title": "Fazer menu" }
                 ]
         },
         {
-            "Id": 5, "title": "Quinto Projeto", "tarefas":
-                [{ "tarefaId": "1", "title": "Fazer footer" },
-                { "tarefaId": "2", "title": "Fazer menu" }
+            "id": 5, "title": "Quinto Projeto", "tarefas":
+                [{ "id": "1", "title": "Fazer footer" },
+                { "id": "2", "title": "Fazer menu" }
                 ]
         },
         {
-            "Id": 6, "title": "Sexto Projeto", "tarefas":
-                [{ "tarefaId": "1", "title": "Fazer footer" },
-                { "tarefaId": "2", "title": "Fazer menu" }
+            "id": 6, "title": "Sexto Projeto", "tarefas":
+                [{ "id": "1", "title": "Fazer footer" },
+                { "id": "2", "title": "Fazer menu" }
                 ]
         },
         {
-            "Id": 7, "title": "Setimo Projeto", "tarefas":
-                [{ "tarefaId": "1", "title": "Fazer footer" },
-                { "tarefaId": "2", "title": "Fazer menu" }
+            "id": 7, "title": "Setimo Projeto", "tarefas":
+                [{ "id": "1", "title": "Fazer footer" },
+                { "id": "2", "title": "Fazer menu" }
                 ]
         },
         {
-            "Id": 8, "title": "Oitavo Projeto", "tarefas":
-                [{ "tarefaId": "1", "title": "Fazer footer" },
-                { "tarefaId": "2", "title": "Fazer menu" }
+            "id": 8, "title": "Oitavo Projeto", "tarefas":
+                [{ "id": "1", "title": "Fazer footer" },
+                { "id": "2", "title": "Fazer menu" }
                 ]
         },
         {
-            "Id": 9, "title": "Nono Projeto", "tarefas":
-                [{ "tarefaId": "1", "title": "Fazer footer" },
-                { "tarefaId": "2", "title": "Fazer menu" }
+            "id": 9, "title": "Nono Projeto", "tarefas":
+                [{ "id": "1", "title": "Fazer footer" },
+                { "id": "2", "title": "Fazer menu" }
                 ]
         },
         {
-            "Id": 10, "title": "Decimo Projeto", "tarefas":
-                [{ "tarefaId": "1", "title": "Fazer footer" },
-                { "tarefaId": "2", "title": "Fazer menu" }
+            "id": 10, "title": "Decimo Projeto", "tarefas":
+                [{ "id": "1", "title": "Fazer footer" },
+                { "id": "2", "title": "Fazer menu" }
                 ]
         },
         {
-            "Id": 11, "title": "Decimo Primeiro Projetofasdfa fsadfsadfasdff", "tarefas":
-                [{ "Id": "1", "title": "Fazer footer" },
-                { "Id": "2", "title": "Fazer menu" }
+            "id": 11, "title": "Decimo Primeiro Projetofasdfa fsadfsadfasdff", "tarefas":
+                [{ "id": "1", "title": "Fazer footer" },
+                { "id": "2", "title": "Fazer menu" }
                 ]
         }
     ],
     "setor": [
     {
-        "Id": 1,
+        "id": 1,
         "title": "setor 1",
         "user": [
             {
-                "Id": 1,
+                "id": 1,
                 "title": "Nelcael",
                 "tarefas":[
                     {
-                        "Id": 1,
+                        "id": 1,
                         "title":"tarefa 1",
                         "description" : "lalalalal",
                         "priority" : "BAIXA"
                     },
                     {
-                        "Id": 2,
+                        "id": 2,
                         "title":"tarefa 2",
                         "description" : "lalalala2",
                         "priority" : "MEDIA"
@@ -94,27 +94,27 @@
        ]
     },
     {
-        "Id": 2,
-        "title": "setor 2",
+        "id": 2,
+        "title": "setor 2 fasdf asdf",
         "user": [
             {
-                "Id": 1,
+                "id": 1,
                 "title": "Nelcael",
                 "tarefas":[
                     {
-                        "Id": 1,
+                        "id": 1,
                         "title":"tarefa 1",
                         "description" : "lalalalal",
                         "priority" : "BAIXA"
                     },
                     {
-                        "Id": 2,
+                        "id": 2,
                         "title":"tarefa 2",
                         "description" : "lalalala2",
                         "priority" : "MEDIA"
                     },
                     {
-                        "Id": 3,
+                        "id": 3,
                         "title":"tarefa 2",
                         "description" : "lalalala2",
                         "priority" : "ALTA"

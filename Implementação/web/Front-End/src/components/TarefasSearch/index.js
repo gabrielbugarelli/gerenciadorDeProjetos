@@ -5,7 +5,7 @@ import {LastMsg} from '../../styled'
 const TarefasSearch = ({data,setList,setListButton,setActive,active,typeSearch}) => {
     // const filtro = data.title
     function handleSearch() {
-        window.$http.get(`http://localhost:3000/${typeSearch}?Id=${data.Id}`).then((res) => {
+        window.$http.get(`http://localhost:3000/${typeSearch}?id=${data.id}`).then((res) => {
                 setList(res.data)
         })
         setActive(!active)

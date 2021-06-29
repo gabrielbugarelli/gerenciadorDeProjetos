@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, ContainerSearchProject, IconSearchProject, ContainerListProject } from './styled';
+import { Container, ContainerSearchProject, IconSearchProject, ContainerListProject} from './styled';
 import TarefasSearch from '../TarefasSearch'
 import AllTarefas from '../AllTarefas'
 
