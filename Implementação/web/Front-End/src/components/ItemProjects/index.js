@@ -17,7 +17,7 @@ const ItemProjects = ({data}) => {
                 <TitleItemProjects><LastMsg>{data.title}</LastMsg></TitleItemProjects>
             </ContainerItemProjects>
             {data.tarefas.map((item,key)=>(
-                    <ContainerTarefas data={item} Active={active}/>
+                    <ContainerTarefas data={item} key={key} Active={active}/>
             ))}
             <CreateTarefa Active={active} icon='pi pi-plus'/>
         </>

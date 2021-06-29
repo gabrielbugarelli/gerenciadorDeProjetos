@@ -69,62 +69,65 @@
         }
     ],
     "setor": [
-    {
-        "id": 1,
-        "title": "setor 1",
-        "user": [
-            {
-                "id": 1,
-                "title": "Nelcael",
-                "tarefas":[
-                    {
-                        "id": 1,
-                        "title":"tarefa 1",
-                        "description" : "lalalalal",
-                        "priority" : "BAIXA"
-                    },
-                    {
-                        "id": 2,
-                        "title":"tarefa 2",
-                        "description" : "lalalala2",
-                        "priority" : "MEDIA"
-                    }
-                ]
-            }
-       ]
-    },
-    {
-        "id": 2,
-        "title": "setor 2 fasdf asdf",
-        "user": [
-            {
-                "id": 1,
-                "title": "Nelcael",
-                "tarefas":[
-                    {
-                        "id": 1,
-                        "title":"tarefa 1",
-                        "description" : "lalalalal",
-                        "priority" : "BAIXA"
-                    },
-                    {
-                        "id": 2,
-                        "title":"tarefa 2",
-                        "description" : "lalalala2",
-                        "priority" : "MEDIA"
-                    },
-                    {
-                        "id": 3,
-                        "title":"tarefa 2",
-                        "description" : "lalalala2",
-                        "priority" : "ALTA"
-                    }
-                ]
-            }
-       ]
-    }
-
-
+        {
+            "id": 1,
+            "title": "setor 1",
+            "user": [
+                {
+                    "id": 1,
+                    "title": "Nelcael",
+                    "tarefas":[
+                        {
+                            "id": 1,
+                            "title":"tarefa 1",
+                            "description" : "lalalalal",
+                            "priority" : "BAIXA"
+                        },
+                        {
+                            "id": 2,
+                            "title":"tarefa 2",
+                            "description" : "lalalala2",
+                            "priority" : "MEDIA"
+                        }
+                    ]
+                }
+        ]
+        },
+        {
+            "id": 2,
+            "title": "setor 2 fasdf asdf",
+            "user": [
+                {
+                    "id": 1,
+                    "title": "Nelcael",
+                    "tarefas":[
+                        {
+                            "id": 1,
+                            "title":"tarefa 1",
+                            "description" : "lalalalal",
+                            "priority" : "BAIXA"
+                        },
+                        {
+                            "id": 2,
+                            "title":"tarefa 2",
+                            "description" : "lalalala2",
+                            "priority" : "MEDIA"
+                        },
+                        {
+                            "id": 3,
+                            "title":"tarefa 2",
+                            "description" : "lalalala2",
+                            "priority" : "ALTA"
+                        }
+                    ]
+                }
+        ]
+        }
+    ],
+    "Sprint":[
+        {
+            
+        }
     ]
 
 }
