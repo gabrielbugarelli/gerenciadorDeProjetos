@@ -1,11 +1,10 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 //styled components
-import { Container, Tasks, Header } from './style';
-import { Cards, HeaderBoard } from '../Board/styled';
+import { Container, Board, HeaderBoard, CardBoard, Tasks, Header } from './style';
+
 
 //components
-import Board from '../Board';
 import Card from '../Card';
 import SearchProject from '../SearchProject';
 
@@ -22,26 +21,41 @@ const CardSeplag = () => {
 
   useEffect(() => {
     window.$http.get('http://localhost:3000/setor').then((res) => {
-        setSetor(res.data)
-        console.log(res.data);
-        setSetorButton(res.data)
+      setSetor(res.data)
+      // console.log(res.data);
+      setSetorButton(res.data)
     })
-}, []);
+  }, []);
 
   return (
     <Container>
       <Header>
-      {/* title,list, setList, listButton  ,setListButton, typeSearch */}
-        <SearchProject title={'Setor'} list={setor} setList={setSetor} listButton={setorButton} setListButton={setSetorButton} typeSearch={'setor'}/>
+        {/* title,list, setList, listButton  ,setListButton, typeSearch */}
+        <SearchProject title={'Setor'} list={setor} setList={setSetor} listButton={setorButton} setListButton={setSetorButton} typeSearch={'setor'} />
         {/* <SearchProject title={'Sprint'} list={sprint} setList={setSprint} /> */}
+        {console.log(setor.user)}
       </Header>
       <Tasks>
-        {board.map(board => <Board key={board.id} user={board.user}>
+        {setor.map((item, key) => (
+          <Board>
+            {item.user.map((item, key) => (
+              <>
+                <HeaderBoard>
+                  {item.title}
+                </HeaderBoard>
 
-          {/* <Cards>
-            {task.map(task => <Card key={task.id} title={task.title} description={task.description} priority={task.priority} />)}
-          </Cards> */}
-        </Board>)}
+                <CardBoard>
+                  {
+                    item.tarefas.map((item, key) => (
+                      <Card key={key} title={item.title} description={item.description} priority={item.priority} />
+                    ))
+                  }
+                </CardBoard>
+
+              </>
+            ))}
+          </Board>
+        ))}
       </Tasks>
     </Container>
   )
