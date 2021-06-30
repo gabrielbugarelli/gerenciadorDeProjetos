@@ -6,7 +6,7 @@ import { LastMsg } from '../../styled';
 
 export default function Card(props) {
   return (
-    <Container>
+    <Container >
       <Header priority={props.priority} />
       <ProjectTitle>
         <LastMsg>

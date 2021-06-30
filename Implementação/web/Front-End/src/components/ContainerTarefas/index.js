@@ -1,9 +1,9 @@
 import React from 'react';
-import {Container,TitleTarefa} from'./styled'
+import { Container, TitleTarefa } from './styled'
 import CreateTarefa from '../CreateTarefa';
-import {LastMsg} from '../../styled'
+import { LastMsg } from '../../styled'
 
-const ContainerTarefas = ({data,Active}) => {
+const ContainerTarefas = ({ data, Active, id }) => {
 
     // {   
     //     const arrastar = document.querySelectorAll("[draggable='true']");
@@ -11,23 +11,28 @@ const ContainerTarefas = ({data,Active}) => {
 
     // }
 
-    function comecarArrastar() {
-        console.log('começou a arrastar');
+
+    const dragStart = e => {
+        const target = e.target;
+        e.dataTransfer.setData('card_id', target.id);
     }
 
+    const dragOver = e => {
+        e.stopPropagation();
+    }
 
     return (
         <>
-            {Active  &&
-                <>
-                    <Container draggable='true' onDragStart={comecarArrastar}>
-                        <TitleTarefa><LastMsg>{data.titulo}</LastMsg></TitleTarefa>
-                    </Container>
-                </>
-            }
-            
+            {/* {Active && */}
+            <div id={id} onDragStart={dragStart} onDragOver={dragOver} draggable={true}>
+                <Container  >
+                    <TitleTarefa><LastMsg>{data.titulo}</LastMsg></TitleTarefa>
+                </Container>
+            </div>
+            {/* } */}
+
         </>
-        
+
     );
 }
 
