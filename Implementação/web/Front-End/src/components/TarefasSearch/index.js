@@ -13,7 +13,7 @@ const TarefasSearch = ({data,setList,setListButton,setActive,active,typeSearch})
 
     return (
         <Container onClick={handleSearch}>
-            <LastMsg>{data.title}</LastMsg>
+            <LastMsg>{data.titulo}</LastMsg>
         </Container>
     );
 }

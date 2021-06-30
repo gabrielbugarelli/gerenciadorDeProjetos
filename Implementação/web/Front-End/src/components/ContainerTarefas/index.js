@@ -21,7 +21,7 @@ const ContainerTarefas = ({data,Active}) => {
             {Active  &&
                 <>
                     <Container draggable='true' onDragStart={comecarArrastar}>
-                        <TitleTarefa><LastMsg>{data.title}</LastMsg></TitleTarefa>
+                        <TitleTarefa><LastMsg>{data.titulo}</LastMsg></TitleTarefa>
                     </Container>
                 </>
             }

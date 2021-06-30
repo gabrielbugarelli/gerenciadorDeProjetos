@@ -14,7 +14,7 @@ const ItemProjects = ({data}) => {
         <>
             <ContainerItemProjects onClick={handleActive}>
                 <IconItemProjects className={`${active  ? 'pi pi-minus' : 'pi pi-plus'}`}/>
-                <TitleItemProjects><LastMsg>{data.title}</LastMsg></TitleItemProjects>
+                <TitleItemProjects><LastMsg>{data.titulo}</LastMsg></TitleItemProjects>
             </ContainerItemProjects>
             {data.tarefas.map((item,key)=>(
                     <ContainerTarefas data={item} key={key} Active={active}/>
