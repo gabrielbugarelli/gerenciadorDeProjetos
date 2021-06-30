@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 //styled components
 import { Container, Board, HeaderBoard, CardBoard, Tasks, Header } from './style';
-
+import './estilo.css';
 
 //components
 import Card from '../Card';
@@ -30,10 +30,7 @@ const CardSeplag = () => {
   return (
     <Container>
       <Header>
-        {/* title,list, setList, listButton  ,setListButton, typeSearch */}
-        <SearchProject title={'Setor'} list={setor} setList={setSetor} listButton={setorButton} setListButton={setSetorButton} typeSearch={'setor'} />
-        {/* <SearchProject title={'Sprint'} list={sprint} setList={setSprint} /> */}
-        {console.log(setor.user)}
+        <SearchProject classAtividadeSetor="buttonAtividadeSetor" classButtonSetor="buttonSetor" title={'Setor'} list={setor} setList={setSetor} listButton={setorButton} setListButton={setSetorButton} typeSearch={'setor'} />
       </Header>
       <Tasks>
         {setor.map((item, key) => (
@@ -51,7 +48,6 @@ const CardSeplag = () => {
                     ))
                   }
                 </CardBoard>
-
               </>
             ))}
           </Board>

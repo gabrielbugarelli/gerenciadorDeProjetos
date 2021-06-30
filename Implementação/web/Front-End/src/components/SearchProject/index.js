@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Container, ContainerSearchProject, IconSearchProject, ContainerListProject} from './styled';
+import { Container, ContainerSearchProject, IconSearchProject, ContainerListProject } from './styled';
 import TarefasSearch from '../TarefasSearch'
 import AllTarefas from '../AllTarefas'
 
-const SearchProject = ({ title,list, setList, listButton  ,setListButton, typeSearch}) => {
+const SearchProject = ({ classButtonSetor, classAtividadeSetor, title, list, setList, listButton, setListButton, typeSearch }) => {
 
     const [active, setActive] = useState(false);
 
@@ -18,12 +18,12 @@ const SearchProject = ({ title,list, setList, listButton  ,setListButton, typeSe
 
     return (
         <Container>
-            <ContainerSearchProject onClick={hadleActive}>
+            <ContainerSearchProject onClick={hadleActive} className={classButtonSetor}>
                 {title}
                 <IconSearchProject className={`${active ? 'pi pi-angle-up' : 'pi pi-angle-down'}`} />
             </ContainerSearchProject>
             {active &&
-                <ContainerListProject>
+                <ContainerListProject className={classAtividadeSetor} >
                     {listButton.map((item, key) => (
                         <TarefasSearch
                             key={key}
@@ -35,8 +35,8 @@ const SearchProject = ({ title,list, setList, listButton  ,setListButton, typeSe
                             typeSearch={typeSearch}
                         />
                     ))}
-                    { typeSearch == 'projeto' &&
-                        <AllTarefas title= {`Todos os ${title}`} onClick={handleAllTarefas} />
+                    {typeSearch == 'projeto' &&
+                        <AllTarefas title={`Todos os ${title}`} onClick={handleAllTarefas} />
                     }
                 </ContainerListProject>
             }

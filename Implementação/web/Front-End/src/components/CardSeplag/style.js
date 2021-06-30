@@ -14,6 +14,9 @@ export const Board = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  
   width: 20.5vw;
   height: calc(100% - 56.5%);
   border-radius: 15px;
@@ -23,18 +26,17 @@ export const Board = styled.div`
   box-shadow: 0 1px 4px 0 rgba(192, 208, 230, 0.8);
 `;
 
+export const CardBoard = styled.div`
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5px;
+  width: 100%;
+`;
+
 export const HeaderBoard = styled.div`
-  position: relative;
   font-weight: bold;
   text-align: center;
   margin: 0.5vw;
-`;
-
-export const CardBoard = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 0.3vw;
 `;
 
 export const Tasks = styled.div`
@@ -53,7 +55,8 @@ export const Tasks = styled.div`
     }
 `
 export const Header = styled.header`
-  display: flex;
-  justify-content: space-around;
+display: flex;
+justify-content: center;
   margin-bottom: 2vh;
+  width: 100%;
 `;

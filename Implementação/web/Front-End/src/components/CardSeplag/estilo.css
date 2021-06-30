@@ -1,0 +1,10 @@
+.buttonSetor {
+  display: flex !important;
+  justify-content: center !important;
+  width: 16vw !important;
+  height: 4vh !important;
+}
+
+.buttonAtividadeSetor {
+  width: 16vw !important;
+}
