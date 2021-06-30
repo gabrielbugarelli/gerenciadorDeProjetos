@@ -38,16 +38,16 @@ const CardSeplag = () => {
       <Tasks>
         {setor.map((item, key) => (
           <Board>
-            {item.user.map((item, key) => (
+            {item.funcionario.map((item, key) => (
               <>
                 <HeaderBoard>
-                  {item.title}
+                  {item.titulo}
                 </HeaderBoard>
 
                 <CardBoard>
                   {
                     item.tarefas.map((item, key) => (
-                      <Card key={key} title={item.title} description={item.description} priority={item.priority} />
+                      <Card key={key} title={item.titulo} description={item.descricao} priority={item.prioridade} />
                     ))
                   }
                 </CardBoard>
