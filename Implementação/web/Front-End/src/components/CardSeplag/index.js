@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 //styled components
 import { Container, Board, HeaderBoard, CardBoard, Tasks, Header } from './style';
+import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
 import './estilo.css';
 
 //components
@@ -29,30 +30,32 @@ const CardSeplag = () => {
 
   return (
     <Container>
-      <Header>
-        <SearchProject classAtividadeSetor="buttonAtividadeSetor" classButtonSetor="buttonSetor" title={'Setor'} list={setor} setList={setSetor} listButton={setorButton} setListButton={setSetorButton} typeSearch={'setor'} />
-      </Header>
-      <Tasks>
-        {setor.map((item, key) => (
-          <Board key={key}>
-            {item.funcionario.map((item, key1) => (
-              <div style={{ width: "100%" }} key={key1}>
-                <HeaderBoard>
-                  {item.titulo}
-                </HeaderBoard>
+      <DragDropContext>
+        <Header>
+          <SearchProject classAtividadeSetor="buttonAtividadeSetor" classButtonSetor="buttonSetor" title={'Setor'} list={setor} setList={setSetor} listButton={setorButton} setListButton={setSetorButton} typeSearch={'setor'} />
+        </Header>
+        <Tasks>
+          {setor.map((item, key) => (
+            <Board key={key}>
+              {item.funcionario.map((item, key1) => (
+                <div style={{ width: "100%" }} key={key1}>
+                  <HeaderBoard>
+                    {item.titulo}
+                  </HeaderBoard>
 
-                <CardBoard>
-                  {
-                    item.tarefas.map((item, key) => (
-                      <Card key={key} title={item.titulo} description={item.descricao} priority={item.prioridade} />
-                    ))
-                  }
-                </CardBoard>
-              </div>
-            ))}
-          </Board>
-        ))}
-      </Tasks>
+                  <CardBoard>
+                    {
+                      item.tarefas.map((item, key) => (
+                        <Card key={key} title={item.titulo} description={item.descricao} priority={item.prioridade} />
+                      ))
+                    }
+                  </CardBoard>
+                </div>
+              ))}
+            </Board>
+          ))}
+        </Tasks>
+      </DragDropContext>
     </Container>
   )
 }
