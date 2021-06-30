@@ -32,7 +32,7 @@ const CardSeplag = () => {
     <Container>
       <DragDropContext>
         <Header>
-          <SearchProject classAtividadeSetor="buttonAtividadeSetor" classButtonSetor="buttonSetor" title={'Setor'} list={setor} setList={setSetor} listButton={setorButton} setListButton={setSetorButton} typeSearch={'setor'} />
+          <SearchProject classAtividadeSetor="buttonAtividadeSetor" classButtonSetor="buttonSetor" title={'Setores'} list={setor} setList={setSetor} listButton={setorButton} setListButton={setSetorButton} typeSearch={'setor'} />
         </Header>
         <Tasks>
           {setor.map((item, key) => (

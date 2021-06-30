@@ -35,9 +35,9 @@ const SearchProject = ({ classButtonSetor, classAtividadeSetor, title, list, set
                             typeSearch={typeSearch}
                         />
                     ))}
-                    {typeSearch == 'projeto' &&
+                    
                         <AllTarefas title={`Todos os ${title}`} onClick={handleAllTarefas} />
-                    }
+                    
                 </ContainerListProject>
             }
         </Container>
