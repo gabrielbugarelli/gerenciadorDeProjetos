@@ -34,10 +34,10 @@ const CardSeplag = () => {
       </Header>
       <Tasks>
         {setor.map((item, key) => (
-          <Board>
-            {item.funcionario.map((item, key) => (
-              <>
-                <HeaderBoard>
+          <Board key={key}>
+            {item.funcionario.map((item, key1) => (
+              <div key={key1}>
+                <HeaderBoard >
                   {item.titulo}
                 </HeaderBoard>
 
@@ -48,7 +48,7 @@ const CardSeplag = () => {
                     ))
                   }
                 </CardBoard>
-              </>
+              </div>
             ))}
           </Board>
         ))}
