@@ -36,8 +36,8 @@ const CardSeplag = () => {
         {setor.map((item, key) => (
           <Board key={key}>
             {item.funcionario.map((item, key1) => (
-              <div key={key1}>
-                <HeaderBoard >
+              <div style={{ width: "100%" }} key={key1}>
+                <HeaderBoard>
                   {item.titulo}
                 </HeaderBoard>
 
